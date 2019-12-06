@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>curveyLady!</title>
+    <style>
+    body {
+        background: rgb(125, 198, 205);
+        color: rgb(45, 45, 45);
+        padding: 10px;
+        font-family: arial;
+    }
+    header {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    #all-contents {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* navigation menu */
+    nav {
+        background: rgb(239, 80, 41);
+        margin: 0 auto;
+        display: flex;
+        padding: 10px;
+    }
+    nav header {
+        display: flex;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        flex: 1;
+    }
+    nav ul {
+        list-style-image: none;
+    }
+    nav li {
+        display: inline-block;
+        padding: 0 10px;
+    }
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* main container area beneath menu */
+    main {
+        background: rgb(245, 238, 219);
+        display: flex;
+    }
+    .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+    }
+    .sidebar img {
+        width: 200px;
+    }
+    .content {
+        flex: 1;
+        padding: 15px;
+    }
+    .interests header {
+        font-size: 1.25em;
+    }
+</style>
+</head>
+<body>
+<div id="all-contents"> 
+        <nav>
+
+        </nav>
+
+        <main>
+<div class="sidebar">
+<img src="data:image/jpeg;base64,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">
+  
+
+    </div>
+    <div class="content">
+        <h1> Dallas</h1>
+        <p>student at sci</p>
+      <section class ¨CURVEYLADY¨>
+        <header>CURVEYLADY</header>
+            <ul>
+                <li>style</li>
+                <li>Happeness</li>
+                <li>curves</li>
+            </ul>
+        </section>
+    </div>
+        </main>
+    </div>
+</body>
+</html>
+
